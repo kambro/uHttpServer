@@ -1,0 +1,12 @@
+char *sprintfalloc(const char *, ...); 
+char *trim(char *);
+long in_array(char, const char []); 
+long count_words(char *, char *); 
+unsigned long count_lines(char *);
+char *strnduplicate(char *, unsigned long);
+char *getLineByIndex(unsigned long, char *);
+short get_word_by_index(unsigned long, char *, char *, char *); 
+int get_word_index(char *, char *, char *); 
+char *get_section(char *, char *, char *); 
+short isalnum_str(const char []);
+short is_empty(const char []);

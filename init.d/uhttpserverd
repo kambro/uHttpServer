@@ -1,0 +1,20 @@
+#!/bin/bash
+UHTTP_SERVER_BIN="./../uhttpserver"
+
+case "$1" in
+  start)
+#    log_begin_msg "Uruchamianie uHTTPServer..."
+     RUN="$(${UHTTP_SERVER_BIN})"    
+echo "---${RUN}  = = ${UHTTP_SERVER_BIN}"
+#    log_end_msg 0
+    ;;
+  stop)
+#    log_begin_msg "Zamykanie uHTTPServer..."
+     RUN="killall -9 (${UHTTP_SERVER_BIN}"    
+#    log_end_msg 0
+    ;;
+  *)
+  ;;
+esac
+        
+
